@@ -94,7 +94,7 @@ function draw() {
     
     //console.log(mario.y);
     // jump mario when space key is pressed
-    if(keyDown("space") && mario.y >= 297) {
+    if(touches.length > 0 || keyDown("space") && mario.y >= 297) {
       mario.velocityY = -12;
       jumpSound.play();
     }
