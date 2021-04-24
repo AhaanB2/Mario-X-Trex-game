@@ -1,4 +1,6 @@
 // Initialize game states
+var canvas
+
 var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
@@ -36,7 +38,7 @@ function preload(){
 
 function setup() {
   
-  createCanvas(600, 400);
+  canvas = createCanvas(windowWidth, windowHeight);
   
   mario = createSprite(50,330);
   
